@@ -1,0 +1,123 @@
+/* style.css */
+
+/* Body styling */
+body {
+    font-family: 'Shizuru', sans-serif;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styling */
+.header {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+/* Quiz container styling */
+.quiz {
+    margin: 20px;
+}
+
+/* Question styling */
+h5 {
+    color: #fff;
+}
+
+/* Radio button styling */
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+/* Button styling */
+.btn-lg.custom-modal {
+    margin-top: 20px;
+    background-color: #007bff; /* Blue button color */
+    border-color: #007bff;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-lg.custom-modal:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    border-color: #0056b3;
+}
+
+/* Modal styling */
+.modal-content {
+    background-color: #333;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.modal-header {
+    border-bottom: 1px solid #fff; /* White border for header */
+}
+
+.modal-header h4 {
+    color: #fff;
+    margin: 0;
+}
+
+.modal-body {
+    padding: 20px;
+}
+
+.modal-footer {
+    border-top: 1px solid #fff; /* White border for footer */
+    padding: 15px;
+}
+
+/* Timer styling */
+#timer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+#time {
+    color: #ff0; /* Yellow color for timer */
+    font-weight: bold;
+}
+
+/* Background styling */
+.Q1,
+.Q2,
+.Q3,
+.Q4,
+.Q5 {
+    background-color: #222; /* Dark background color for question sections */
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Question number styling */
+.Q1 h5,
+.Q2 h5,
+.Q3 h5,
+.Q4 h5,
+.Q5 h5 {
+    color: #ff0; /* Yellow color for question numbers */
+    margin-top: 0;
+}
+
+/* Answer option styling */
+p[id^="Q"],
+label[for^="Q"] {
+    color: #fff;
+}
+
+/* Horizontal line styling */
+hr {
+    border-color: #fff;
+    margin-top: 20px;
+}

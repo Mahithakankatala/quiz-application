@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="homestyle.css">
+
+    <style>
+        #lesssgo {
+            position: fixed;
+            bottom: 20px;
+            width: 200px;
+            height: 50px;
+            text-align: center;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #ffffff;
+            border: 2px solid #d50909;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease, transform 0.3s ease;
+        }
+
+        pre {
+            font-size: 150px; /* Adjust the font size as needed */
+            
+            margin-top: 0px; /* Adjust vertical margin for centering */
+            font-family:'Times New Roman', Times, serif; /* You can replace 'Arial' with any preferred font */
+            text-align: center;
+            color: white;
+        }
+
+        #lesssgo:hover {
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        #lesssgo:hover::before {
+            content: '→ Click Here to Play Now ←';
+            display: block;
+            font-size: 14px;
+            margin-top: -18px;
+            color: #ffffff;
+            background-color: #000000;
+            padding: 8px 0;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+       
+<pre>
+            <b>
+Quiz
+  Master</b>
+        </pre>
+    
+    <a href="home.html" style="margin-bottom:20px"><button type="button" id="lesssgo">Click me!!</button></a>
+</body>
+</html>

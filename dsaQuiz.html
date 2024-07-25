@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Shizuru#standard-styles">
+    <link rel="stylesheet" href="style.css">
+    <script src="dsascript.js"></script>
+</head>
+<body>
+    <div class="header">
+        <h1>My Quiz APP</h1>
+    </div>
+    <form name="quiz" id="quiz">
+        <div class="quiz">
+
+                <div class="Q1">
+                    <h5> 1) Which one of the following is an application of Stack Data Structure? </h5>
+                    <p id="Q1-a">
+                        <input id="Q1-A" name="Q1" value="A" type="radio">
+                        <label for="Q1-A">A.Managing function calls</label>
+                    </p>
+                    <p id="Q1-b">
+                        <input id="Q1-B" name="Q1" value="B" type="radio">
+                        <label for="Q1-B"> B.The stock span problem</label>
+                    </p>
+                    <p id="Q1-c">
+                        <input id="Q1-C" name="Q1" value="C" type="radio">
+                        <label for="Q1-C"> C.Arithmetic expression evaluation</label>
+                    </p>
+                    <p id="Q1-d">
+                        <input id="Q1-D" name="Q1" value="D" type="radio">
+                        <label for="Q1-D"> D.all of the above mentioned</label>
+                    </p>
+                </div>
+                <hr size="8">
+                <div class="Q2">
+                    <h5> 2) Which of the following sorting algorithms can be used to sort a random linked list with minimum time complexity? </h5>
+                    <p id="Q2-a">
+                        <input id="Q2-A" name="Q2" value="A" type="radio">
+                        <label for="Q2-A"> A.Insertion Sort </label>
+                    </p>
+                    <p id="Q2-b">
+                        <input id="Q2-B" name="Q2" value="B" type="radio">
+                        <label for="Q2-B">B.Quick Sort </label>
+                    </p>
+                    <p id="Q2-c">
+                        <input id="Q2-C" name="Q2" value="C" type="radio">
+                        <label for="Q2-C"> C.Heap Sort </label>
+                    </p>
+                    <p id="Q2-d">
+                        <input id="Q2-D" name="Q2" value="D" type="radio">
+                        <label for="Q2-D"> D. Merge Sort</label>
+                    </p>
+                </div>
+                <hr>
+                <div class="Q3">
+                    <h5>3) Which one of the following is an application of Queue Data Structure? </h5>
+                    <p id="Q3-a">
+                        <input id="Q3-A" name="Q3" value="A" type="radio">
+                        <label for="Q3-A"> A.When a resource is shared among multiple consumers.</label>
+                    </p>
+                    <p id="Q3-b">
+                        <input id="Q3-B" name="Q3" value="B" type="radio">
+                        <label for="Q3-B"> B.When data is transferred asynchronously (data not necessarily
+                             received at same rate as sent) between two processes</label>
+                    </p>
+                    <p id="Q3-c">
+                        <input id="Q3-C" name="Q3" value="C" type="radio">
+                        <label for="Q3-C">C. Load Balancing</label>
+                        </p>
+                    <p id="Q3-d">
+                        <input id="Q3-D" name="Q3" value="D" type="radio">
+                        <label for="Q3-D">D. All of the above</label>
+                    </p>
+                </div>
+                <hr>
+                <div class="Q4">
+                    <h5>4)  What is a data structure?</h5>
+                    <p id="Q4-a">
+                        <input id="Q4-A" name="Q4" value="A" type="radio">
+                        <label for="Q4-A">A.A programming language </label>
+                    </p>
+                    <p id="Q4-b">
+                        <input id="Q4-B" name="Q4" value="B" type="radio">
+                        <label for="Q4-B">B. A collection of algorithms</label>
+                    </p>
+                    <p id="Q4-c">
+                        <input id="Q4-C" name="Q4" value="C" type="radio">
+                        <label for="Q4-C">C.A way to store and organize data </label>
+                    </p>
+                    <p id="Q4-d">
+                        <input id="Q4-D" name="Q4" value="D" type="radio">
+                        <label for="Q4-D">D. A type of computer hardware</label>
+                    </p>
+                </div>
+                <hr>
+                <div class="Q5">
+                    <h5>5) Which data structure is used for implementing recursion?</h5>
+                    <p id="Q5-a">
+                        <input id="Q5-A" name="Q5" value="A" type="radio">
+                        <label for="Q5-A"> A.  Stack</label>
+                    </p>
+                    <p id="Q5-b">
+                        <input id="Q5-B" name="Q5" value="B" type="radio">
+                        <label for="Q5-B"> B. Queue</label>
+                    </p>
+                    <p id="Q5-c">
+                        <input id="Q5-C" name="Q5" value="C" type="radio">
+                        <label for="Q5-C"> C. List</label>
+                    </p>
+                    <p id="Q5-d">
+                        <input id="Q5-D" name="Q5" value="D" type="radio">
+                        <label for="Q5-D"> D.  Array</label>
+                    </p>
+                </div>
+                <!-- <input type="button" value="Submit" id="button" onclick="result()"> -->
+                <button class="btn btn-primary btn-lg custom-modal" id="button" onclick="result()">Submit</button>
+                <div class="modal fade" id="myModal" role="dialog">
+                    <div class="modal-dialog modal-sm">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">Result is</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p> </p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </form>
+    
+</body>
+</html>
